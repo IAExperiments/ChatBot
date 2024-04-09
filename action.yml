@@ -1,0 +1,13 @@
+name: "Generate response"
+description: "Generate response for a question from a wiki page"
+
+inputs:
+  wiki:
+    description: Wiki URL
+    required: true
+  question:
+    description: question
+
+runs:
+  using: "node20"
+  main: "dist/index.js"
